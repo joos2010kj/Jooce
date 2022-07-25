@@ -5,15 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='Jooce',  
-     version='0.0.1',
-     scripts=['Jooce'] ,
+     version='0.0.2',
      author="Kevin Hyekang Joo",
      author_email="joos2010kj@gmail.com",
      description="Simple and Easy Way to Recycle Boring Codes",
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/joos2010kj/Jooce",
-     packages=setuptools.find_packages(),
+     packages=setuptools.find_packages(include=["jooce", "jooce.*"]),
      classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",

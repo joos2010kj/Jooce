@@ -1,5 +1,5 @@
 from pathlib import Path
-from .utils import history
+from .history import history
 import inspect
 
 class Jooce:

@@ -1,4 +1,4 @@
-# Jooce
+# jooce
 
 Ever felt tired of reusing the same, tedious code over and over again? Well, at least I did run into this a lot while working on research projects! 
 
@@ -48,7 +48,7 @@ Jooce has the following static methods usable at class-level:
 
 ### File1.py:
 ```
-from repo.jooce import Jooce
+from jooce import Jooce
 
 Jooce.create_storage("temp")
 Jooce.select("temp")
@@ -66,7 +66,7 @@ Jooce.transcribe()
 
 ### File2.py:
 ```
-from repo.jooce import temp
+from jooce import temp
 
 res = utils.openfile("hello.txt")
 print(res)
