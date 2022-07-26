@@ -67,7 +67,7 @@ class Jooce:
         history("w", log)
 
     @classmethod
-    def save(cls, func):
+    def save(cls, func, transcribe=True):
         log = history("r")
         curr = log["__SELECT__"]
 
@@ -81,6 +81,9 @@ class Jooce:
         log[curr]["algorithms"].append(code)
 
         history("w", log)
+
+        if transcribe:
+            cls.transcribe()
 
     @classmethod
     def remove_function(cls, name):

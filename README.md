@@ -59,7 +59,16 @@ def openfile(f):
     with Path(f).open("r") as fp:
         return fp.readlines()
 
-Jooce.save(openfile)
+Jooce.save(openfile, transcribe=False)
+
+def writefile(f, content):
+    from pathlib import Path
+
+    with Path(f).open("w") as fp:
+        fp.writelines(content)
+
+Jooce.save(openfile, transcribe=False)
+
 Jooce.transcribe()
 ```
 

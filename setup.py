@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
      name='Jooce',  
-     version='0.0.2',
+     version='0.0.5',
      author="Kevin Hyekang Joo",
      author_email="joos2010kj@gmail.com",
      description="Simple and Easy Way to Recycle Boring Codes",
