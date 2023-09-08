@@ -44,6 +44,13 @@ Jooce has the following static methods usable at class-level:
   
 ---
 
+## How to install
+
+- `git clone git@github.com:joos2010kj/Jooce.git`
+- `python setup.py install --user`
+
+---
+
 ## Sample Runs
 
 ### File1.py:
@@ -67,7 +74,7 @@ def writefile(f, content):
     with Path(f).open("w") as fp:
         fp.writelines(content)
 
-Jooce.save(openfile, transcribe=False)
+Jooce.save(writefile, transcribe=False)
 
 Jooce.transcribe()
 ```
@@ -77,6 +84,6 @@ Jooce.transcribe()
 ```
 from jooce import temp
 
-res = utils.openfile("hello.txt")
+res = temp.openfile("hello.txt") # Make sure to have hello.txt file ready
 print(res)
 ```
